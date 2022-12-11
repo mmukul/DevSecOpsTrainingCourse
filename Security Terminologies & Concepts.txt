@@ -1,0 +1,50 @@
+Training Agenda:
+
+1. Security Terminologies & Concepts
+
+	a. Vulnerability - CWE, CVE, CVSS
+	
+	CWE - Common Weakness Enumeration
+	CVE - Common Vulnerabilities and Exposures
+	CVSS - Common Vulnerability Scoring System
+	
+	log4j - CVE-2021-44228
+	
+	b. Threat
+	c. Exploit
+	d. Risk
+
+2. Shift to DevSecOps
+3. DevSecOps Tools
+4. Planning, Design for DevSecOps
+5. SAST
+   - Codacy, WhiteSource with GitHub
+
+Scanner for Git secrets:
+
+6. Trufflehog
+
+   docker pull gesellix/trufflehog
+   docker run gesellix/trufflehog --json https://github.com/mmukul/webapp.git
+   
+Scan Sensitive Information from the Code (CLI):
+
+7. Talisman (pre commit hook) - https://github.com/mmukul/pre-commit-hooks
+
+    curl https://thoughtworks.github.io/talisman/install.sh > install-talisman.sh
+    chmod +x install-talisman.sh
+
+    # Install to a single project
+    cd my-git-project
+
+    # as a pre-push hook
+    ./install-talisman.sh
+
+    # or as a pre-commit hook
+    ./install-talisman.sh pre-commit
+	
+8. syft (generates a Software Bill of Materials (SBOM) from container images and filesystems) - https://github.com/mmukul/syft
+9. grype (A vulnerability scanner for container images and filesystems) - https://github.com/mmukul/grype
+
+
+
