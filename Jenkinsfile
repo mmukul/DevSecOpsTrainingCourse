@@ -29,7 +29,7 @@ pipeline {
         
       }
     }
-    
+
     stage ('SAST') {
       steps {
         withSonarQubeEnv('sonar') {
