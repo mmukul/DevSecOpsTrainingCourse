@@ -2,7 +2,7 @@ pipeline {
   agent any 
   
   stages {
-    stage ('Initialize ENV') {
+    stage ('Initialize Environment') {
       steps {
         sh '''
                echo "PATH = ${PATH}"
