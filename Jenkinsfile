@@ -1,12 +1,14 @@
 pipeline {
   agent any 
-  
+  tools {
+    maven 'Maven'
+  }
   stages {
-    stage ('Initialize') {
+    stage ('Initialize ENV') {
       steps {
         sh '''
-             echo "PATH = ${PATH}"
-             echo "MAVEN_HOME = ${MAVEN_HOME}"
+               echo "PATH = ${PATH}"
+               echo "MAVEN_HOME = ${MAVEN_HOME}"
             ''' 
       }
     }
@@ -14,7 +16,7 @@ pipeline {
     stage ('Scan Git Secrets') {
       steps {
         sh 'rm trufflehog || true'
-        sh 'docker run gesellix/trufflehog --json https://github.com/mmukul/webapp.git > trufflehog'
+        sh 'docker run gesellix/trufflehog --json https://github.com/cehkunal/webapp.git > trufflehog'
         sh 'cat trufflehog'
       }
     }
@@ -22,14 +24,14 @@ pipeline {
     stage ('Source Composition Analysis') {
       steps {
          sh 'rm owasp* || true'
-         sh 'wget "https://raw.githubusercontent.com/mmukul/webapp/master/owasp-dependency-check.sh" '
+         sh 'wget "https://raw.githubusercontent.com/cehkunal/webapp/master/owasp-dependency-check.sh" '
          sh 'chmod +x owasp-dependency-check.sh'
          sh 'bash owasp-dependency-check.sh'
-         sh 'cat /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml'
+         sh 'cat ~/OWASP-Dependency-Check/reports/dependency-check-report.xml'
         
       }
     }
-
+    
     stage ('SAST') {
       steps {
         withSonarQubeEnv('sonar') {
@@ -43,6 +45,14 @@ pipeline {
       steps {
       sh 'mvn clean package'
        }
-     }
-   }
- }
+    }
+
+    stage ('DAST') {
+      steps {
+        sshagent(['zap']) {
+         sh 'docker run -t owasp/zap2docker-stable zap-baseline.py -t http://localhost:8080/webapp/" || true'
+        }
+      }
+    }
+  }
+}
