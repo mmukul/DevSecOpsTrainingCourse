@@ -5,11 +5,20 @@ pipeline {
     stage ('Initialize Environment') {
       steps {
         sh '''
-             echo "PATH = ${PATH}"
-             echo "MAVEN_HOME = ${MAVEN_HOME}"
+            echo "PATH = ${PATH}"
+            echo "MAVEN_HOME = ${MAVEN_HOME}"
             ''' 
       }
     }
+
+    stage ('Clean Images') {
+     steps {
+        sh '''
+            docker rm -vf $(docker ps -aq)
+            docker rmi -f $(docker images -aq)
+           '''
+    }
+      }
     
     stage ('Scan Git Secrets') {
       steps {
@@ -19,7 +28,7 @@ pipeline {
       }
     }
     
-    stage ('Source Composition Analysis') {
+    stage ('SCA - Dependency Check') {
       steps {
          sh 'rm owasp* || true'
          sh 'wget "https://raw.githubusercontent.com/mmukul/webapp/master/owasp-dependency-check.sh" '
@@ -30,14 +39,12 @@ pipeline {
       }
     }
     
-    stage ('SAST') {
+    stage ('SonarQube - SAST') {
       steps {
-        withSonarQubeEnv('sonar') {
-          sh 'mvn sonar:sonar'
-          sh 'cat target/sonar/report-task.txt'
+          sh 'docker run -d -p 9000:9000 -p 9092:9092 owasp/sonarqube'
+          sh 'mvn sonar:sonar -Dsonar.projectKey=webapp -Dsonar.host.url=http://localhost:9000 -Dsonar.login=d9347a83d86b83ba5da564459f8d115a5f42106a'
         }
       }
-    }
     
     stage ('Build') {
       steps {
