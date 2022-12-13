@@ -23,6 +23,9 @@
         <groupId>org.owasp</groupId>
         <artifactId>dependency-check-maven</artifactId>
         <version>7.4.0</version>
+        <configuration>
+          <failBuildOnCVSS>8</failBuildOnCVSS>
+        </configuration>
     </dependency>
     <dependency>
         <groupId>org.sonarsource.scanner.maven</groupId>
