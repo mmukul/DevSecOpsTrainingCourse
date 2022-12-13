@@ -20,6 +20,11 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+        <groupId>org.owasp</groupId>
+        <artifactId>dependency-check-maven</artifactId>
+        <version>7.4.0</version>
+    </dependency>
+    <dependency>
         <groupId>org.sonarsource.scanner.maven</groupId>
         <artifactId>sonar-maven-plugin</artifactId>
         <version>3.9.1.2184</version>
