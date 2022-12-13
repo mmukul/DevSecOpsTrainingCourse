@@ -42,9 +42,9 @@ pipeline {
        }
     }
 
-    stage ('DAST - ZAP') {
+    stage ('OWASP ZAP - DAST') {
       steps {
-        sh 'docker run -t owasp/zap2docker-stable zap-baseline.py -t http://localhost:8080/webapp/" || true'
+        sh 'docker run -t owasp/zap2docker-stable zap-baseline.py || true'
       }
     }
   }
