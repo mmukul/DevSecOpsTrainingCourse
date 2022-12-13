@@ -41,7 +41,7 @@ pipeline {
     
     stage ('SonarQube - SAST') {
       steps {
-          sh 'docker rm -f owasp/sonarqube || true''
+          sh 'docker rm -f owasp/sonarqube || true'
           sh 'docker rmi -f owasp/sonarqube || true'
           sh 'docker run -d -p 9095:9095 -p 9090:9090 owasp/sonarqube'
           sh 'mvn sonar:sonar -Dsonar.projectKey=webapp -Dsonar.host.url=http://localhost:9095 -Dsonar.login=d9347a83d86b83ba5da564459f8d115a5f42106a'
