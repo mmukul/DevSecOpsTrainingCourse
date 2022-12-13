@@ -19,7 +19,7 @@ pipeline {
       }
     }
     
-    stage ('SCA - Dependency Check') {
+    stage ('Vulnerability Scan - SCA') {
       steps {
          sh 'rm owasp* || true'
          sh 'wget "https://raw.githubusercontent.com/mmukul/webapp/master/owasp-dependency-check.sh" '
@@ -44,8 +44,14 @@ pipeline {
 
     stage ('OWASP ZAP - DAST') {
       steps {
-        sh 'docker run -t owasp/zap2docker-weekly zap-baseline.py -t http://localhost:10080'
+        sh 'docker run -p 8090:8090 -i owasp/zap2docker-stable zap.sh -daemon -port 8090 -host 0.0.0.0'
       }
     }
+  }
+}
+
+post {
+  always {
+    dependencyCheckPublisher pattern: 'dependency-check-report.xml'
   }
 }
