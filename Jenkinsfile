@@ -32,6 +32,7 @@ pipeline {
 
     stage ('SonarQube - SAST') {
       steps {
+          sh 'docker run -d -p 9000:9000 -p 9002:9002 owasp/sonarqube || true'
           sh 'mvn sonar:sonar -Dsonar.projectKey=devsecops -Dsonar.host.url=http://localhost:9000 -Dsonar.login=1011d3cc19b970778e3986418a422f7dca5d827f'
         }
       }
@@ -44,7 +45,7 @@ pipeline {
 
     stage ('OWASP ZAP - DAST') {
       steps {
-        sh 'docker run -p 0.0.0.0:8080:8080 -e TZ=Kolkata/Asia webgoat/webgoat'
+        sh 'docker run -d -p 0.0.0.0:8080:8080 -e TZ=Kolkata/Asia webgoat/webgoat'
         sh '"docker run -t owasp/zap2docker-stable zap-baseline.py -t http://localhost:8080/WebGoat/" || true'
         }
       }
