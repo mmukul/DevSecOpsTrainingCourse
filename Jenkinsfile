@@ -11,6 +11,7 @@ pipeline {
       }
     }
     
+    /*...........................Git Secrets................................*/
     stage ('Scan Git Secrets') {
       steps {
         sh 'rm trufflehog || true'
@@ -19,6 +20,7 @@ pipeline {
       }
     }
     
+    /*...........................Software Composition Analysis................................*/
     stage ('Vulnerability Scan - SCA') {
       steps {
          sh 'rm owasp* || true'
@@ -29,11 +31,12 @@ pipeline {
         
       }
     }
-
+    
+    /*...........................SAST................................*/
     stage ('SonarQube - SAST') {
       steps {
           /*sh 'docker run -d -p 9000:9000 -p 9002:9002 owasp/sonarqube || true'*/
-          sh 'mvn sonar:sonar -Dsonar.projectKey=devsecops -Dsonar.host.url=http://localhost:9000 -Dsonar.login=72908a94f4439ddfaf9a8e44405b3999dfbc8755'
+          sh 'mvn sonar:sonar -Dsonar.projectKey=devsecops -Dsonar.host.url=http://localhost:9000 -Dsonar.login=b0eb94677f73f8ec959e92fe1b8992f1456ff499'
         }
       }
     
@@ -43,6 +46,7 @@ pipeline {
        }
     }
 
+    /*...........................DAST................................*/
     stage ('OWASP ZAP - DAST') {
       steps {
         /*sh 'docker run --name webgoat -p 8080:8080 -p 9090:9090 -d webgoat/goatandwolf'*/
