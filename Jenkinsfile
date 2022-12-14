@@ -44,11 +44,9 @@ pipeline {
 
     stage ('OWASP ZAP - DAST') {
       steps {
-        sh 'docker network create zapnet'
-        sh 'docker run --name goatandwolf -p 8081:8081 -p 9090:9090 -d --net zapnet webgoat/goatandwolf'
-        sh 'docker run --net zapnet -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-full-scan.py -I -j -m 10 -T 60 -t http://172.18.0.2:8081/WebGoat -r zap-full-scan-without-user.html'
+         sh '"docker run -t owasp/zap2docker-stable zap-baseline.py -t http://13.232.202.25:8080/webapp/" || true'
+        }
       }
-    }
   }
 }
 
