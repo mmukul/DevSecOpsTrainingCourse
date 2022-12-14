@@ -46,7 +46,7 @@ pipeline {
     stage ('OWASP ZAP - DAST') {
       steps {
         /*sh 'docker run --name webgoat -p 8080:8080 -p 9090:9090 -d webgoat/goatandwolf'*/
-        sh 'docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-baseline.py -I -j -m 10 -T 60 -t http://192.168.48.136:8080/WebGoat -r zap-baseline-scan.html'
+        sh 'docker run --user $(id -u):$(id -g) -v $(pwd):/zap/wrk/:rw --rm -t owasp/zap2docker-stable zap-baseline.py -t http://localhost:8080/WebGoat/ -r zap-baseline-scan.html || true'
         }
       }
   }
@@ -55,5 +55,6 @@ pipeline {
 post {
   always {
     dependencyCheckPublisher pattern: 'dependency-check-report.xml'
+    publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'zap-baseline-scan.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
   }
 }
