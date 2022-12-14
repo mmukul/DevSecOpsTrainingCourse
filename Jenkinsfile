@@ -52,7 +52,7 @@ pipeline {
         /*sh 'docker run --name webgoat -p 8080:8080 -p 9090:9090 -d webgoat/goatandwolf'*/
         sh '''
           IPADD=$(ip -f inet -o addr show ens33 | awk '{print $4}' | cut -d '/' -f 1)
-          docker run --user $(id -u):$(id -g) -v $(pwd):/zap/wrk/:rw --rm -t owasp/zap2docker-stable zap-baseline.py -t http://${IPADD}:8080/WebGoat
+          docker run --user $(id -u):$(id -g) -v $(pwd):/zap/wrk/:rw --rm -t owasp/zap2docker-stable zap-baseline.py -t http://${IPADD}:8080/WebGoat || true
           '''
         }
       }
@@ -61,7 +61,7 @@ pipeline {
 
 post {
   always {
-    dependencyCheckPublisher pattern: 'dependency-check-report.xml'
-    publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'zap-baseline-scan.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
+    dependencyCheckPublisher pattern: 'target/dependency-check-report.xml'
+    publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: '', reportFiles: 'zap-baseline-scan.html', reportName: 'HTML Report', reportTitles: 'OWASP ZAP Report', useWrapperFileDirectly: true])
   }
 }
