@@ -45,7 +45,7 @@ pipeline {
 
     stage ('OWASP ZAP - DAST') {
       steps {
-        IPADD="$(ip -f inet -o addr show ens33 | awk '{print $4}' | cut -d '/' -f 1)"
+        IPADD=ip -f inet -o addr show ens33 | awk '{print $4}' | cut -d '/' -f 1
         sh 'docker run -d -p 8080:8080 -e TZ=Kolkata/Asia webgoat/webgoat'
         sh 'docker run -t owasp/zap2docker-stable zap-baseline.py -t http://$IPADD:8080/WebGoat || true'
         }
