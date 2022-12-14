@@ -50,7 +50,7 @@ pipeline {
     stage ('OWASP ZAP - DAST') {
       steps {
         /*sh 'docker run --name webgoat -p 8080:8080 -p 9090:9090 -d webgoat/goatandwolf'*/
-        sh 'docker run --user $(id -u):$(id -g) -v $(pwd):/zap/wrk/:rw --rm -t owasp/zap2docker-stable zap-baseline.py -t http://172.17.0.3:8080/WebGoat/ -r zap-baseline-scan.html || true'
+        sh 'docker run --user $(id -u):$(id -g) -v $(pwd):/zap/wrk/:rw --rm -t owasp/zap2docker-stable zap-baseline.py -t http://localhost:8080/WebGoat/ -r zap-baseline-scan.html || true'
         }
       }
   }
