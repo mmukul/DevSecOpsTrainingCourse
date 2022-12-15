@@ -28,7 +28,6 @@ pipeline {
       steps {
         sh 'rm trufflehog || true'
         sh 'docker run gesellix/trufflehog --json https://github.com/mmukul/webapp > reports/trufflehog'
-        #sh 'cat reports/trufflehog'
       }
     }
     
@@ -73,7 +72,7 @@ pipeline {
 }
   post {
     always {
-      dependencyCheckPublisher pattern: 'dependency-check-report.xml'
+      dependencyCheckPublisher pattern: 'reports/dependency-check-report.xml'
       publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: '/var/jenkins/workspace/devsecops_demo/reports', reportFiles: 'zap-baseline-scan.html', reportName: 'HTML Report', reportTitles: 'OWASP ZAP Report', useWrapperFileDirectly: true])
   }
 }
