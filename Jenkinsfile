@@ -15,7 +15,7 @@ pipeline {
     stage ('Pre-commit hooks') {
       steps {
         sh '''
-         curl https://github.com/mmukul/talisman/install.sh > ~/install-talisman.sh'
+         curl https://github.com/mmukul/talisman/install.sh > ~/install-talisman.sh
          chmod +x ~/install-talisman.sh
          cd talisman
          ~/install-talisman.sh pre-commit
