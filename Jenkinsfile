@@ -65,7 +65,7 @@ pipeline {
           #IPADD=$(ip -f inet -o addr show ens33 | awk '{print $4}' | cut -d '/' -f 1)
           IPADD=$(docker inspect webgoat | grep IPAddress |grep 172* |head -1 | awk '{ print $2 }' | cut -d '"' -f 2)
           docker run --name webgoat -p 8080:8080 -p 9090:9090 -d webgoat/goatandwolf
-          docker run --user $(id -u):$(id -g) zapnet -v $(pwd):/zap/wrk/:rw --rm -t owasp/zap2docker-stable zap-baseline.py -t http://${IPADD}:8080/WebGoat || true
+          docker run --user $(id -u):$(id -g) -v $(pwd):/zap/wrk/:rw --rm -t owasp/zap2docker-stable zap-baseline.py -t http://${IPADD}:8080/WebGoat || true
           '''
         }
       }
@@ -75,7 +75,7 @@ pipeline {
       steps {
         /*curl -L "https://github.com/docker/compose/releases/download/2.14.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose*/
         sh '''
-          git clone https://github.com/DefectDojo/django-DefectDojo
+          git clone https://github.com/DefectDojo/django-DefectDojo && cd django-DefectDojo
           ./dc-build.sh
           ./dc-up.sh mysql-rabbitmq
           docker-compose logs initializer | grep "Admin password:"
