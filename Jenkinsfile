@@ -15,10 +15,9 @@ pipeline {
     stage ('Pre-commit hooks') {
       steps {
         sh '''
-         curl https://github.com/mmukul/talisman/install.sh > ~/install-talisman.sh
-         chmod +x ~/install-talisman.sh
-         cd talisman
-         ~/install-talisman.sh pre-commit
+         curl https://github.com/mmukul/pre-commit-hooks/install.sh > install-talisman.sh
+         chmod +x install-talisman.sh
+         install-talisman.sh pre-commit
          '''
       }
     }
@@ -74,6 +73,7 @@ pipeline {
       /*...........................DefectDojo................................*/
       stage ('DefectDojo - Vulnerability Management') {
       steps {
+        /*curl -L "https://github.com/docker/compose/releases/download/2.14.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose*/
         sh '''
           git clone https://github.com/DefectDojo/django-DefectDojo
           ./dc-build.sh
