@@ -17,7 +17,7 @@ pipeline {
         sh '''
          curl https://github.com/mmukul/pre-commit-hooks/install.sh > install-talisman.sh
          chmod +x install-talisman.sh
-         install-talisman.sh pre-commit
+         ./install-talisman.sh pre-commit
          '''
       }
     }
