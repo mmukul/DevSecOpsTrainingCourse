@@ -69,7 +69,7 @@ pipeline {
       }
     post {
         always {
-            dependencyCheckPublisher pattern: 'reports/dependency-check-report.xml'
+            dependencyCheckPublisher failedNewCritical: 10, failedNewHigh: 8, failedNewLow: 2, failedNewMedium: 5, pattern: '/var/jenkins/workspace/devsecops_demo/reports/dependency-check-report.xml', unstableNewCritical: 8, unstableNewHigh: 6, unstableNewLow: 1, unstableNewMedium: 3
             publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: '/var/jenkins/workspace/devsecops_demo/reports', reportFiles: 'zap-baseline-scan.html', reportName: 'OWASP ZAP Report', reportTitles: 'OWASP ZAP Report', useWrapperFileDirectly: true])
         }
      }
