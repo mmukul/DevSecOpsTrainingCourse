@@ -15,6 +15,7 @@ pipeline {
     stage ('Pre-commit hooks') {
       steps {
         sh '''
+         rm -rf .git/hooks/pre-commit | true
          curl https://raw.githubusercontent.com/mmukul/pre-commit-hooks/main/install.sh > install-precommit.sh
          chmod +x install-precommit.sh
          ./install-precommit.sh pre-commit
