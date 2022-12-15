@@ -32,7 +32,7 @@ pipeline {
     }
     
     /*....................Software Composition Analysis....................*/
-    stage ('Vulnerability Scan - SCA') {
+    stage ('Software Composition Analysis - SCA') {
       steps {
          sh 'rm owasp* || true'
          sh 'wget "https://raw.githubusercontent.com/mmukul/webapp/master/owasp-dependency-check.sh" '
@@ -63,7 +63,7 @@ pipeline {
               docker run --name nginx -d -p 8081:80 nginx' */
         sh '''
           IPADD=$(ip -f inet -o addr show ens33 | awk '{print $4}' | cut -d '/' -f 1)
-          docker run --user $(id -u):$(id -g) -v $(pwd):/zap/wrk/:rw --rm -t owasp/zap2docker-stable zap-baseline.py -t http://${IPADD}:8081 > reports/zap-baseline-scan.html || true
+          docker run --user $(id -u):$(id -g) -v $(pwd):/zap/wrk/:rw --rm -t owasp/zap2docker-stable zap-baseline.py -t http://${IPADD}:8081 -r reports/zap-baseline-scan.html || true
           '''
           }
         }
