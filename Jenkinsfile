@@ -82,12 +82,12 @@ pipeline {
           '''  
         }
       }
-  }
+   }
 }
 
-post {
-  always {
-    dependencyCheckPublisher pattern: 'target/dependency-check-report.xml'
-    publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: '', reportFiles: 'zap-baseline-scan.html', reportName: 'HTML Report', reportTitles: 'OWASP ZAP Report', useWrapperFileDirectly: true])
+  post {
+    always {
+      dependencyCheckPublisher pattern: 'dependency-check-report.xml'
+      publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: '', reportFiles: 'zap-baseline-scan.html', reportName: 'HTML Report', reportTitles: 'OWASP ZAP Report', useWrapperFileDirectly: true])
   }
 }
