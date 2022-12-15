@@ -71,13 +71,14 @@ pipeline {
     stage ('Vulnerability Scan - App Image') {
       steps {
         /* curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin */
-        sh 'grype docker.io/nginx'
+        sh 'grype docker.io/nginx > reports/vulnerability-scan-report.html'
        }
     }
   }
     post {
         always {
             publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: '/var/jenkins/workspace/devsecops_demo/reports', reportFiles: 'zap-baseline-scan.html', reportName: 'OWASP ZAP Report', reportTitles: 'OWASP ZAP Report', useWrapperFileDirectly: true])
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: '/var/jenkins/workspace/devsecops_demo/reports', reportFiles: 'vulnerability-scan-report.html', reportName: 'Vulnerability Scan Report', reportTitles: 'Vulnerability Scan Report', useWrapperFileDirectly: true])
         }
      }
   }
