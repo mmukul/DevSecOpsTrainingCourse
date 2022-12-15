@@ -71,7 +71,7 @@ pipeline {
     stage ('Vulnerability Scan - App Image') {
       steps {
         /* curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin */
-        sh 'grype docker.io/nginx > reports/vulnerability-scan-report.html'
+        sh 'grype docker.io/nginx --file reports/vulnerability-scan-report.html'
        }
     }
   }
