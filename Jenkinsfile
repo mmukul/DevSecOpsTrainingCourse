@@ -59,14 +59,22 @@ pipeline {
     /*...........................DAST................................*/
     stage ('OWASP ZAP - DAST') {
       steps {
-        /*sh 'docker run --name webgoat -p 8080:8080 -p 9090:9090 -d webgoat/goatandwolf'*/
+        /* sh 'docker run --name webgoat -p 8080:8080 -p 9090:9090 -d webgoat/goatandwolf
+              docker run --name nginx -d -p 8081:80 nginx' */
         sh '''
-          IPADD=$(docker inspect webgoat | grep IPAddress |grep 172.* |head -1 | awk '{ print $2 }' | cut -d '"' -f 2)
-          docker run --user $(id -u):$(id -g) -v $(pwd):/zap/wrk/:rw --rm -t owasp/zap2docker-stable zap-baseline.py -t http://${IPADD}:8080/WebGoat > reports/zap-baseline-scan.html || true
+          IPADD=$(ip -f inet -o addr show ens33 | awk '{print $4}' | cut -d '/' -f 1)
+          docker run --user $(id -u):$(id -g) -v $(pwd):/zap/wrk/:rw --rm -t owasp/zap2docker-stable zap-baseline.py -t http://${IPADD}:8081 > reports/zap-baseline-scan.html || true
           '''
           }
         }
-      }
+    
+    stage ('Vulnerability Scan - App Image') {
+      steps {
+        /* curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin */
+        sh 'grype docker.io/nginx'
+       }
+    }
+  }
     post {
         always {
             dependencyCheckPublisher failedNewCritical: 10, failedNewHigh: 8, failedNewLow: 2, failedNewMedium: 5, pattern: '/var/jenkins/workspace/devsecops_demo/reports/dependency-check-report.xml', unstableNewCritical: 8, unstableNewHigh: 6, unstableNewLow: 1, unstableNewMedium: 3
