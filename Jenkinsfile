@@ -26,7 +26,7 @@ pipeline {
     /*...........................Git Secrets................................*/
     stage ('Scan Git Secrets') {
       steps {
-        sh 'rm trufflehog || true'
+        sh 'rm reports/trufflehog || true'
         sh 'docker run gesellix/trufflehog --json https://github.com/mmukul/webapp > reports/trufflehog'
       }
     }
