@@ -11,6 +11,18 @@ pipeline {
       }
     }
     
+    /*...........................Pre-commit hooks............................*/
+    stage ('Pre-commit hooks') {
+      steps {
+        sh '''
+         curl https://github.com/mmukul/talisman/install.sh > ~/install-talisman.sh'
+         chmod +x ~/install-talisman.sh
+         cd talisman
+         ~/install-talisman.sh pre-commit
+         '''
+      }
+    }
+
     /*...........................Git Secrets................................*/
     stage ('Scan Git Secrets') {
       steps {
@@ -20,7 +32,7 @@ pipeline {
       }
     }
     
-    /*...........................Software Composition Analysis................................*/
+    /*....................Software Composition Analysis....................*/
     stage ('Vulnerability Scan - SCA') {
       steps {
          sh 'rm owasp* || true'
@@ -36,7 +48,7 @@ pipeline {
     stage ('SonarQube - SAST') {
       steps {
           /*sh 'docker run -d -p 9000:9000 -p 9002:9002 owasp/sonarqube || true'*/
-          sh 'mvn sonar:sonar -Dsonar.projectKey=devsecops -Dsonar.host.url=http://localhost:9000 -Dsonar.login=b0eb94677f73f8ec959e92fe1b8992f1456ff499'
+          sh 'mvn sonar:sonar -Dsonar.projectKey=devsecops -Dsonar.host.url=http://localhost:9000 -Dsonar.login=d5dc048c2ed785e40716f6ae1e17e47a1df847a2'
         }
       }
     
