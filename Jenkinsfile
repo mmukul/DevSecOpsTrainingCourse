@@ -74,6 +74,7 @@ pipeline {
         sh 'grype docker.io/nginx'
        }
     }
+  }
     post {
         always {
             dependencyCheckPublisher failedNewCritical: 10, failedNewHigh: 8, failedNewLow: 2, failedNewMedium: 5, pattern: '/var/jenkins/workspace/devsecops_demo/reports/dependency-check-report.xml', unstableNewCritical: 8, unstableNewHigh: 6, unstableNewLow: 1, unstableNewMedium: 3
@@ -81,4 +82,3 @@ pipeline {
         }
      }
   }
-}
