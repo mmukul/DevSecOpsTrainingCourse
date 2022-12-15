@@ -5,6 +5,7 @@ pipeline {
     stage ('Initialize Environment') {
       steps {
         sh '''
+            mkdir reports
             echo "PATH = ${PATH}"
             echo "MAVEN_HOME = ${MAVEN_HOME}"
             ''' 
@@ -15,7 +16,7 @@ pipeline {
     stage ('Pre-commit hooks') {
       steps {
         sh '''
-         rm -rf .git/hooks/pre-commit || true
+         rm -rf .git/hooks/pre-commit
          curl https://raw.githubusercontent.com/mmukul/pre-commit-hooks/main/install.sh > install-precommit.sh
          chmod +x install-precommit.sh
          ./install-precommit.sh pre-commit
