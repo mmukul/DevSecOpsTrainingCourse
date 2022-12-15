@@ -5,7 +5,6 @@ pipeline {
     stage ('Initialize Environment') {
       steps {
         sh '''
-            mkdir reports
             echo "PATH = ${PATH}"
             echo "MAVEN_HOME = ${MAVEN_HOME}"
             ''' 
@@ -15,20 +14,20 @@ pipeline {
     /*...........................Pre-commit hooks............................*/
     stage ('Pre-commit hooks') {
       steps {
-        sh '''
-         rm -rf .git/hooks/pre-commit
-         curl https://raw.githubusercontent.com/mmukul/pre-commit-hooks/main/install.sh > install-precommit.sh
-         chmod +x install-precommit.sh
-         ./install-precommit.sh pre-commit
-         '''
+         sh 'rm -rf .git/hooks/pre-commit || true'
+         sh 'curl https://raw.githubusercontent.com/mmukul/pre-commit-hooks/main/install.sh > install-precommit.sh'
+         sh 'chmod +x install-precommit.sh'
+         sh './install-precommit.sh pre-commit'
       }
     }
 
     /*...........................Git Secrets................................*/
     stage ('Scan Git Secrets') {
       steps {
+        sh 'mkdir reports'
         sh 'rm reports/trufflehog || true'
         sh 'docker run gesellix/trufflehog --json https://github.com/mmukul/webapp > reports/trufflehog'
+        sh 'cat reports/trufflehog'
       }
     }
     
@@ -51,7 +50,7 @@ pipeline {
         }
       }
     
-    stage ('Build') {
+    stage ('Build App') {
       steps {
       sh 'mvn clean package'
        }
@@ -62,8 +61,7 @@ pipeline {
       steps {
         /*sh 'docker run --name webgoat -p 8080:8080 -p 9090:9090 -d webgoat/goatandwolf'*/
         sh '''
-          #IPADD=$(ip -f inet -o addr show ens33 | awk '{print $4}' | cut -d '/' -f 1)
-          IPADD=$(docker inspect webgoat | grep IPAddress |grep 172* |head -1 | awk '{ print $2 }' | cut -d '"' -f 2)
+          IPADD=$(docker inspect webgoat | grep IPAddress |grep 172.* |head -1 | awk '{ print $2 }' | cut -d '"' -f 2)
           docker run --user $(id -u):$(id -g) -v $(pwd):/zap/wrk/:rw --rm -t owasp/zap2docker-stable zap-baseline.py -t http://${IPADD}:8080/WebGoat > reports/zap-baseline-scan.html || true
           '''
           }
