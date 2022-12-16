@@ -25,9 +25,8 @@ pipeline {
     stage ('Scan Git Secrets') {
       steps {
         sh 'mkdir reports || true'
-        sh 'rm reports/trufflehog || true'
-        sh 'docker run gesellix/trufflehog --json https://github.com/mmukul/webapp > reports/trufflehog'
-        sh 'cat reports/trufflehog'
+        sh 'rm -f reports/trufflehog || true'
+        sh 'docker run gesellix/trufflehog --json https://github.com/mmukul/webapp > reports/trufflehog.json'
       }
     }
     
@@ -79,6 +78,7 @@ pipeline {
         always {
             publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: '/var/jenkins/workspace/devsecops_demo/reports', reportFiles: 'zap-baseline-scan.html', reportName: 'OWASP ZAP Report', reportTitles: 'OWASP ZAP Report', useWrapperFileDirectly: true])
             publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: '/var/jenkins/workspace/devsecops_demo/reports', reportFiles: 'vulnerability-scan-report.html', reportName: 'Vulnerability Scan Report', reportTitles: 'Vulnerability Scan Report', useWrapperFileDirectly: true])
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'reports', reportFiles: 'trufflehog.json', reportName: 'Git Secrets Report', reportTitles: 'Git Secrets Report', useWrapperFileDirectly: true])
         }
      }
   }
