@@ -45,7 +45,7 @@ pipeline {
     stage ('SonarQube - SAST') {
       steps {
           /*sh 'docker run -d -p 9000:9000 -p 9002:9002 owasp/sonarqube || true'*/
-          sh 'mvn sonar:sonar -Dsonar.projectKey=devsecops -Dsonar.host.url=http://localhost:9000 -Dsonar.login=d5dc048c2ed785e40716f6ae1e17e47a1df847a2'
+          sh 'mvn sonar:sonar -Dsonar.projectKey=devsecops -Dsonar.host.url=http://localhost:9000 -Dsonar.login=925018b83b496a0800268e1a6e087ec56fd7d713'
         }
       }
     
@@ -62,7 +62,7 @@ pipeline {
               docker run --name nginx -d -p 8081:80 nginx' */
         sh '''
           IPADD=$(ip -f inet -o addr show ens33 | awk '{print $4}' | cut -d '/' -f 1)
-          docker run --user $(id -u):$(id -g) -v $(pwd):/zap/wrk/:rw --rm -t owasp/zap2docker-stable zap-baseline.py -t http://${IPADD}:8081 -r reports/zap-baseline-scan.html || true
+          docker run --user $(id -u):$(id -g) -v $(pwd):/zap/wrk/:rw --rm -t owasp/zap2docker-stable zap-baseline.py -t http://${IPADD}:8080/WebGoat/ -r reports/zap-baseline-scan.html || true
           '''
           }
         }
