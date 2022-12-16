@@ -19,7 +19,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Secrete Management from codebase
 - Vulnerability Management
 - Create DevSecOps pipelines using Git Secrets, SCA, SAST, DAST, OWASP Tools etc
-- Security Best Practices
+- Security Best Practices and OWASP Top 10
 
 ### Training Key Features
 - Live, online classroom training by experienced instructors
