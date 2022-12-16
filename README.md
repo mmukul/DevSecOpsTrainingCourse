@@ -13,12 +13,13 @@ Learners should have a technical background with an understanding of Linux funda
 This DevSecOps Online Training will be suitable for software developers, technical project managers, architects, operations support, deployment engineers, Freshers and Induction Batch
 
 ### Program Overview
-- Security Terminologies
 - Components in a DevOps Pipeline
-- Shifting to DevSecOps processes and tools
-- Create DevSecOps pipelines using SCA, SAST, DAST etc
+- Shifting to DevSecOps processes and Secure SDLC
+- Security Tools and Terminologies
+- Secrete Management from codebase
 - Vulnerability Management
-- Security Best Practices
+- Create DevSecOps pipelines using Git Secrets, SCA, SAST, DAST, OWASP Tools etc
+- Security Best Practices and OWASP Top 10
 
 ### Training Key Features
 - Live, online classroom training by experienced instructors
