@@ -75,8 +75,8 @@ pipeline {
               sh 'grype docker.io/webgoat/goatandwolf --file reports/vulnerability-scan-report.json'
           },
           "Trivy Scan":{
-              sh "docker run --rm -v $WORKSPACE::/root/.cache/ aquasec/trivy:0.35.0 --exit-code 0 --severity HIGH 0 docker.io/webgoat/webgoat"
-              sh "docker run --rm -v $WORKSPACE::/root/.cache/ aquasec/trivy:0.35.0 --exit-code 0 --severity CRITICAL 1 docker.io/webgoat/webgoat"
+              sh "docker run --rm aquasec/trivy:0.35.0 --exit-code 0 --severity HIGH 0 docker.io/webgoat/webgoat"
+              sh "docker run --rm aquasec/trivy:0.35.0 --exit-code 0 --severity CRITICAL 1 docker.io/webgoat/webgoat"
           }
         )
        }
