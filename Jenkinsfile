@@ -75,7 +75,7 @@ pipeline {
               sh 'grype docker.io/webgoat/goatandwolf --file reports/vulnerability-scan-report.json'
           },
           "Trivy Scan":{
-              sh "docker run --rm aquasec/trivy:0.35.0 docker.io/webgoat/webgoat"
+              sh "trivy image --severity CRITICAL docker.io/webgoat/webgoat --security-checks vuln"
           }
         )
        }
