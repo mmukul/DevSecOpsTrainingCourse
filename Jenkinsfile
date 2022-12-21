@@ -75,28 +75,18 @@ pipeline {
               sh 'grype docker.io/webgoat/goatandwolf --file reports/vulnerability-scan-report.json'
           },
           "Trivy Scan":{
-              sh "trivy image docker.io/webgoat/webgoat --security-checks vuln > reports/trivy_report.json"
-              sh "trivy image docker.io/webgoat/webgoat --security-checks vuln > reports/trivy_report.json"
+              sh "trivy image docker.io/webgoat/webgoat --security-checks vuln > reports/trivy_report"
           }
         )
        }
     }
-    
-    stage('dependencyTrackPublisher') {
-            steps {
-                withCredentials([string(credentialsId: '506ed685-4e2b-4d31-a44f-8ba8e67b6341', variable: 'API_KEY')]) {
-                    dependencyTrackPublisher artifact: 'target/bom.xml', projectName: 'my-project', projectVersion: 'my-version', synchronous: true, dependencyTrackApiKey: API_KEY, projectProperties: [tags: ['tag1', 'tag2'], swidTagId: 'my swid tag', group: 'my group']
-                }
-            }
-        }
-    }
-
+  }
     post {
         always {
             publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'reports', reportFiles: 'zap-baseline-scan.html', reportName: 'OWASP ZAP Report', reportTitles: 'OWASP ZAP Report', useWrapperFileDirectly: true])
             publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'reports', reportFiles: 'vulnerability-scan-report.json', reportName: 'Vulnerability Scan Report', reportTitles: 'Vulnerability Scan Report', useWrapperFileDirectly: true])
             publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'reports', reportFiles: 'trufflehog.json', reportName: 'Git Secrets Report', reportTitles: 'Git Secrets Report', useWrapperFileDirectly: true])
-            publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'reports', reportFiles: 'trivy_report.json', reportName: 'Trivy Vulnerability Report', reportTitles: 'Trivy Vulnerability Report', useWrapperFileDirectly: true])
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'reports', reportFiles: 'trivy_report', reportName: 'Trivy Vulnerability Report', reportTitles: 'Trivy Vulnerability Report', useWrapperFileDirectly: true])
             dependencyCheckPublisher pattern: 'reports/dependency-check-report.xml'
         }
      }
