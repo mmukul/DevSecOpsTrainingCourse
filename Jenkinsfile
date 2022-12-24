@@ -45,7 +45,7 @@ pipeline {
     stage ('SonarQube - SAST') {
       steps {
           /*sh 'docker run --rm -d -p 9000:9000 -p 9002:9002 owasp/sonarqube || true'*/
-          sh 'mvn sonar:sonar -Dsonar.projectKey=devsecops -Dsonar.host.url=http://localhost:9000 -Dsonar.login=3ec9d410b5af187f739beab08f7ccb171cfb48f9'
+          sh 'mvn sonar:sonar -Dsonar.projectKey=devsecops -Dsonar.host.url=http://localhost:9000 -Dsonar.login=d523fde1897d7a83ccd554adae15d66a3bc77ad2'
         }
       }
     
