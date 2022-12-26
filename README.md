@@ -91,4 +91,3 @@ This DevSecOps Online Training will be suitable for software developers, technic
     - Threat Modelling
 		- STRIDE
 - Web Application Firewall (WAF)
-		- Opensource
