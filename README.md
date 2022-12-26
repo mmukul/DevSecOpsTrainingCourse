@@ -82,13 +82,13 @@ This DevSecOps Online Training will be suitable for software developers, technic
 ### Security
 - Security Terminologies & Concepts
     - Vulnerability
-	 - Common Weakness Enumeration (CWE)
-	 - Common Vulnerabilities and Exposures (CVE)
-	 - Common Vulnerability Scoring System (CVSS)
+	 	- Common Weakness Enumeration (CWE)
+	 	- Common Vulnerabilities and Exposures (CVE)
+	 	- Common Vulnerability Scoring System (CVSS)
     
-    - Threat
-    - Exploit
-    - Risk
+    - Threat, Exploit, Risk
+    - Risk Assessment
+    - Threat Modelling
 	- STRIDE
 - Web Application Firewall (WAF)
 	- Opensource
