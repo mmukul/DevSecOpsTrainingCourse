@@ -67,6 +67,8 @@ This DevSecOps Online Training will be suitable for software developers, technic
 	- tfsec
 - Detect compliance and security violations across Infrastructure as Code
 	- Terrascan
+- Security scanner for your Terraform code
+	- tfsec
 
 ### Container Security
 - Docker Image signing & verification
