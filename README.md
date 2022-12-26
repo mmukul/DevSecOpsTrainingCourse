@@ -1,4 +1,4 @@
-## DevSecOps Training:
+## DevSecOps & Security Training:
 
 ### Training Level
 - Foundation & Intermediate course with Practical Demo and Assignments (CLI & UI)
