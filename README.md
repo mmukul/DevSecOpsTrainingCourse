@@ -31,7 +31,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 
 ## Course Curriculum
 
-**DevSec Topics:**
+***DevSec Topics:***
 - DevSecOps Maturity Model
 - Pre-commit hooks
 	- Talisman
@@ -53,7 +53,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 	- OWASP ZAP
 - Security Best Practices
 
-**Linux Host Security Topics:**
+***Linux Host Security Topics:***
 - Audit Policy for Linux Host
   - Auditd
 - Security Auditing of Host security
@@ -62,13 +62,13 @@ This DevSecOps Online Training will be suitable for software developers, technic
   - Trivy
   - CICD Pipeline Demo
 
-**Infrastructure as Code (Terraform) Security:**
+***Infrastructure as Code (IaC) Security:***
 - Static analysis of terraform code to spot potential misconfigurations
 	- tfsec
 - Detect compliance and security violations across Infrastructure as Code
 	- Terrascan
 
-**Container Security:**
+***Container Security:***
 - Docker Image signing & verification
 - Docker Security Benchmarks
 	- CIS Benchmarking Practices
@@ -77,7 +77,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 	- Kyverno
 	- OPA
 
-**Security Topics:**
+***Security Topics:***
 - Security Terminologies & Concepts
 	- Vulnerability
 		- Common Weakness Enumeration (CWE)
