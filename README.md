@@ -4,7 +4,7 @@
 - Foundation & Intermediate course with Practical Demo and Assignments (CLI & UI)
 
 ### Training Batch
-- Weekdays/Weekends Batch
+- Weekends Batch
 
 ### Pre-requisites
 Learners should have a technical background with an understanding of Linux fundamentals and basic understanding of Application Security practices
@@ -27,6 +27,12 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Flexibility and adjustable class timings
 - Doubt Resolution Sessions
 - Customized Learning
+
+### Course Duration: 2 months
+
+### Fees
+- Contact for more details:
+  - wattsapp: smilemukul2005@gmail.com
 
 
 ## Course Curriculum
