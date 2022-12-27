@@ -1,4 +1,4 @@
-## DevSecOps & Security Training:
+## DevSecOps & Security Online Instructor-Led Training:
 
 ### Training Level
 - Foundation & Intermediate course with Practical Demo and Assignments (CLI & UI)
