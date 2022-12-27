@@ -67,8 +67,8 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Security Terminologies & Concepts
     - Vulnerability
     - Threat, Exploit, Risk
-    - Risk Assessment
-    - Threat Modelling
+- Risk Assessment
+- Threat Modelling
 - Web Application Firewall (WAF)
 
 ### Project
