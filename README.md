@@ -71,4 +71,5 @@ This DevSecOps Online Training will be suitable for software developers, technic
     - Threat Modelling
 - Web Application Firewall (WAF)
 
-### Project (Secure CICD Pipeline)
+### Project
+    - Secure CICD Pipeline
