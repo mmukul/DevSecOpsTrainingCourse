@@ -33,42 +33,28 @@ This DevSecOps Online Training will be suitable for software developers, technic
 
 ### Linux Host Security
 - Audit Policy for Linux Host
-  - Auditd
-- Security Auditing of Host security
-  - Lynis	
+- Security Auditing of Host security	
 - Vulnerability Scanner
-  - Trivy
   - CICD Pipeline Demo
   
 ### Development Security (DevSec)
 - DevSecOps Maturity Model
 - Pre-commit hooks
-	- Talisman
 - Git Secrets
-	- Trufflehog
 - Vulnerability Scanner for Container Images
-	- grype
 - Runtime Security to detect unexpected Application behaviour at Runtime uses system calls
-	- Falco
 - Security & Compliance (Identify security issues and misconfiguration) for Linux & Docker Baseline profiles
-	- Chef Inspec
 - DevSecOps CICD Pipeline 
 	- Practical (Secure CICD)
 - Static Application Security Testing (SAST)
-	- Sonarqube (Code Quality)
 - Software Composition Analysis (SCA)
-	- OWASP Dependency Check
 - Dynamic Application Security Testing (DAST)
-	- OWASP ZAP
 - Security Best Practices
 
 ### Infrastructure as Code (IaC) Security
 - Static analysis of terraform code to spot potential misconfigurations
-	- tfsec
 - Detect compliance and security violations across Infrastructure as Code
-	- Terrascan
 - Security scanner for your Terraform code
-	- tfsec
 
 ### Container Security
 - Docker Image signing & verification
@@ -76,18 +62,11 @@ This DevSecOps Online Training will be suitable for software developers, technic
 	- CIS Benchmarking Practices
 - Security of Docker Host & Daemon
 - Policy Agent
-	- Kyverno
-	- OPA
 
 ### Security
 - Security Terminologies & Concepts
     - Vulnerability
-	 	- Common Weakness Enumeration (CWE)
-	 	- Common Vulnerabilities and Exposures (CVE)
-	 	- Common Vulnerability Scoring System (CVSS)
-    
     - Threat, Exploit, Risk
     - Risk Assessment
     - Threat Modelling
-		- STRIDE
 - Web Application Firewall (WAF)
