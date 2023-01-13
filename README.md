@@ -31,9 +31,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 
 ### Course Duration: 2 Months
 
-### Fees
-- Contact for more details:
-  - Email: smilemukul2005@gmail.com
+### Training Registration: https://forms.gle/gVjz7BA4G38NnYf48
 
 
 ## Course Curriculum
