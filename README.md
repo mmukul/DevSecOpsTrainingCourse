@@ -1,13 +1,15 @@
 ## DevSecOps & Security Online Instructor-Led Training:
 
 ### Training Level
-- Foundation & Intermediate course with Practical Demo and Assignments (CLI & UI)
+- Foundation and Intermediate course with Practical Demos and Projects
 
 ### Training Batch
-- Weekends Batch
+- Weekends and Weekdays Batches
 
 ### Pre-requisites
-Learners should have a technical background with an understanding of Linux fundamentals and basic understanding of Application Security practices
+- Participants should have knowledge of running basic linux commands
+- Participants should have basic understanding of application Security practices like OWASP Top 10
+- You don’t need any experience with DevOps tools
 
 ### Target Audience
 This DevSecOps Online Training will be suitable for software developers, technical project managers, architects, operations support, deployment engineers, Freshers and Induction Batch
@@ -22,17 +24,16 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Security Best Practices and OWASP Top 10
 
 ### Training Key Features
-- Live, online classroom training by experienced instructors
-- Training involves whiteboard, Quiz, Assignments and Practical Demos
+- Online classroom training by experienced instructors
+- Training involves whiteboard, Quiz, Assignments, Practical Demos and Project
 - Flexibility and adjustable class timings
 - Doubt Resolution Sessions
-- Customized Learning
 
-### Course Duration: 2 months
+### Course Duration: 40 hours
 
 ### Fees
 - Contact for more details:
-  - wattsapp: smilemukul2005@gmail.com
+  - Email: smilemukul2005@gmail.com
 
 
 ## Course Curriculum
