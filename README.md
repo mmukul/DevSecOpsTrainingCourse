@@ -29,7 +29,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Flexibility and adjustable class timings
 - Doubt Resolution Sessions
 
-### Course Duration: 40 hours
+### Course Duration: 2 Months
 
 ### Fees
 - Contact for more details:
@@ -75,32 +75,34 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Static Analysis and Its challenges
 - Embedding SAST tools like Find Bugs into the pipeline
 - Secrets scanning to prevent secret exposure in the code
-- **Demo:**
-	- using trufflehog to scan for secrets in CI/CD pipeline
+- **Demo:** Using trufflehog to scan for secrets in CI/CD pipeline
 
 ### Chapter 7: Dynamic Application Security Testing (DAST)
 - What is Dynamic Application Security Testing
 - Embedding DAST tools like ZAP and Burp Suite into the pipeline
 - Creating baseline scans for DAST
-- **Demo:**
-	- using ZAP to configure scans
+- **Demo:** Using ZAP to configure scans
 
 ### Chapter 8: Runtime Security
 - Runtime Security to detect unexpected Application behaviour at Runtime uses system calls
 
-### Chapter 8: Compliance as code
+### Chapter 9: Compliance as code
 - Different approaches to handle compliance requirements at DevOps scale
 - Manage compliance using Inspec/OpenScap at Scale
-- **Demo:** Create a Inspec profile to create compliance checks
+- **Demo:** Use Inspec profile to scale compliance
 
-### Container Security
+### Chapter 10: Vulnerability Management with custom tools
+- Approaches to manage the vulnerabilities in the organization
+- **Demo:** Using Defect Dojo for vulnerability management
+
+### Chapter 11: Container Security
 - Docker Image signing & verification
 - Docker Security Benchmarks
 	- CIS Benchmarking Practices
 - Security of Docker Host & Daemon
 - Policy Agent
 
-### Threat Modelling (Design)
+### Chapter 12: Threat Modelling (Design)
 
 ### Project
-- Secure CICD Pipeline
+- DevSecOps CICD Pipeline
