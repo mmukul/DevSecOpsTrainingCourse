@@ -29,9 +29,10 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Flexibility and adjustable class timings
 - Doubt Resolution Sessions
 
-### Course Duration: 48 hours
-
-### Training Registration Form: https://forms.gle/gVjz7BA4G38NnYf48
+### Course Registration Details:
+- Duration: 48-50 hours
+- Pricing: 40,000 INR
+- Registration Form: https://forms.gle/gVjz7BA4G38NnYf48
 
 
 ## Course Curriculum
