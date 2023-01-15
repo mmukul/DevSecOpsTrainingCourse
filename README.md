@@ -96,14 +96,16 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Manage compliance using Inspec/OpenScap at Scale
 - **Demo:** Use *Inspec* profile to scale compliance
 
-### Chapter 10: Vulnerability Management with custom tools
-- Approaches to manage the vulnerabilities in the organization
-- **Demo:** Using Defect Dojo for vulnerability management
+### Chapter 10: Security Scanner using *Trivy*
+- Detects vulnerabilities in OS packages and application dependencies
+- Known vulnerabilities (CVEs)
+- IaC issues and misconfigurations
+- Sensitive information and secrets
 
-### Chapter 11: Infrastructure as Code Security
+### Chapter 11: Infrastructure as Code (Terraform) Security
 - Static analysis of your terraform code to detect potential security vulnerabilities and misconfigurations in your terraformed infrastructure using *tfsec*
 
-### Chapter 12: Container Security
+### Chapter 12: Container (Docker) Security
 - Container signing & verification using *cosign*
 - Container Security
 	- Privilege Escalation
