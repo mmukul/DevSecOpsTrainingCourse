@@ -56,6 +56,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Vulnerability
 	- Threat, Exploit, Risk
 - Risk Assessment
+- OWASP
 - MITRE ATT&CK
   
 ### Chapter 3: Secure SDLC and CI/CD pipeline
