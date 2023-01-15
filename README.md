@@ -110,5 +110,5 @@ This DevSecOps Online Training will be suitable for software developers, technic
 ### Chapter 13: Threat Modelling (Design)
 - STRIDE
 
-### Chapter 14: Project
+### Practical Project
 - DevSecOps End-to-End CICD Pipeline
