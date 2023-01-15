@@ -83,7 +83,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - **Demo:** Using ZAP to configure scans
 
 ### Chapter 8: Runtime Security
-- Runtime Security to detect unexpected application behaviour at Runtime uses system calls
+- Runtime Security to detect unexpected application behaviour at Runtime uses system calls using *Falco*
 
 ### Chapter 9: Compliance as code
 - Different approaches to handle compliance requirements at DevOps scale
@@ -98,13 +98,17 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Static analysis of your terraform code to detect potential security vulnerabilities and misconfigurations in your terraformed infrastructure using *tfsec*
 
 ### Chapter 12: Container Security
-- Docker Image signing & verification
-- Docker Security Benchmarks
-	- CIS Benchmarking Practices
-- Security of Docker Host & Daemon
-- Policy Agent
+- Container signing & verification using *cosign*
+- Container Security
+	- Privilege Escalation
+	- Capabilities
+	- Read-Only Filesystem
+- Docker Security Audit & Benchmarking
+- Security of Docker Daemon
+- Security of Docker Host
 
 ### Chapter 13: Threat Modelling (Design)
+- STRIDE
 
 ### Project
 - DevSecOps CICD Pipeline
