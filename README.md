@@ -62,11 +62,11 @@ This DevSecOps Online Training will be suitable for software developers, technic
 
 ### Chapter 4: DevSecOps Maturity Model (DSOMM)
 
-### Chapter 5: Software Component Analysis (SCA) in CI/CD pipeline
+### Chapter 5: Software Component Analysis (SCA)
 - What is Software Component Analysis
 - Software Component Analysis and Its challenges
 - What to look in a SCA solution (Free or Commercial)
-- Embedding SCA tools like OWASP Dependency Checker into the pipeline
+- Embedding SCA tools like OWASP Dependency Checker into the CICD pipeline
 - **Demo:** using OWASP Dependency Checker to scan third party component vulnerabilities in Java Code Base
 
 ### Chapter 6: Static Application Security Testing (SAST)
@@ -83,25 +83,28 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - **Demo:** Using ZAP to configure scans
 
 ### Chapter 8: Runtime Security
-- Runtime Security to detect unexpected Application behaviour at Runtime uses system calls
+- Runtime Security to detect unexpected application behaviour at Runtime uses system calls
 
 ### Chapter 9: Compliance as code
 - Different approaches to handle compliance requirements at DevOps scale
 - Manage compliance using Inspec/OpenScap at Scale
-- **Demo:** Use Inspec profile to scale compliance
+- **Demo:** Use *Inspec* profile to scale compliance
 
 ### Chapter 10: Vulnerability Management with custom tools
 - Approaches to manage the vulnerabilities in the organization
 - **Demo:** Using Defect Dojo for vulnerability management
 
-### Chapter 11: Container Security
+### Chapter 11: Infrastructure as Code Security
+- Static analysis of your terraform code to detect potential security vulnerabilities and misconfigurations in your terraformed infrastructure using *tfsec*
+
+### Chapter 12: Container Security
 - Docker Image signing & verification
 - Docker Security Benchmarks
 	- CIS Benchmarking Practices
 - Security of Docker Host & Daemon
 - Policy Agent
 
-### Chapter 12: Threat Modelling (Design)
+### Chapter 13: Threat Modelling (Design)
 
 ### Project
 - DevSecOps CICD Pipeline
