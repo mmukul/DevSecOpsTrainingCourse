@@ -88,8 +88,8 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Creating baseline scans for DAST
 - **Demo:** Using ZAP to configure scans
 
-### Chapter 8: Runtime Security
-- Runtime Security to detect unexpected application behaviour at Runtime uses system calls using *Falco*
+### Chapter 8: Runtime Security & Threat Detection
+- Detect and alert on any behavior that involves making Linux system calls using *Falco*
 
 ### Chapter 9: Compliance as code
 - Different approaches to handle compliance requirements at DevOps scale
