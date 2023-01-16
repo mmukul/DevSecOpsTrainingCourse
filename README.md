@@ -91,32 +91,30 @@ This DevSecOps Online Training will be suitable for software developers, technic
 ### Chapter 8: Runtime Security & Threat Detection
 - Detect and alert on any behavior that involves making Linux system calls using *Falco*
 
-### Chapter 9: Compliance as code
+### Chapter 9: Compliance as Code (CaC)
 - Different approaches to handle compliance requirements at DevOps scale
 - Manage compliance using Inspec/OpenScap at Scale
 - **Demo:** Use *Inspec* profile to scale compliance
 
-### Chapter 10: Security Scanner using *Trivy*
-- Detects vulnerabilities in OS packages and application dependencies
-- Known vulnerabilities (CVEs)
-- IaC issues and misconfigurations
-- Sensitive information and secrets
-
-### Chapter 11: Infrastructure as Code (Terraform) Security
+### Chapter 10: Infrastructure as Code Security
 - Static analysis of your terraform code to detect potential security vulnerabilities and misconfigurations in your terraformed infrastructure using *tfsec*
 
-### Chapter 12: Container Security (CS)
+### Chapter 11: Container Security (CS)
 - Container signing & verification using *cosign*
 - Container Security
 	- Privilege Escalation
 	- Capabilities
 	- Read-Only Filesystem
 - Docker Security Audit & Benchmarking
-- Container & Container Security Problems
-- Container Security Tools
+- Container and Container Security Problems
+- Container Security Tool using *Trivy*
+	- Detects vulnerabilities in OS packages and application dependencies
+	- Known vulnerabilities (CVEs)
+	- IaC issues and misconfigurations
+	- Sensitive information and secrets
 - Container Security Best Practices
 
-### Chapter 13: Threat Modelling (Design)
+### Chapter 12: Threat Modelling (Design)
 - STRIDE
 
 ### Practical Project
