@@ -105,15 +105,16 @@ This DevSecOps Online Training will be suitable for software developers, technic
 ### Chapter 11: Infrastructure as Code (Terraform) Security
 - Static analysis of your terraform code to detect potential security vulnerabilities and misconfigurations in your terraformed infrastructure using *tfsec*
 
-### Chapter 12: Container (Docker) Security
+### Chapter 12: Container Security (CS)
 - Container signing & verification using *cosign*
 - Container Security
 	- Privilege Escalation
 	- Capabilities
 	- Read-Only Filesystem
 - Docker Security Audit & Benchmarking
-- Security of Docker Daemon
-- Security of Docker Host
+- Container & Container Security Problems
+- Container Security Tools
+- Container Security Best Practices
 
 ### Chapter 13: Threat Modelling (Design)
 - STRIDE
