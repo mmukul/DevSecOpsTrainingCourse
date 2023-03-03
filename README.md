@@ -36,6 +36,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Duration: 48-50 hours
 - Book Training Slot:
 	- Registration Form: https://forms.gle/gVjz7BA4G38NnYf48
+- Course Fee: Best & Minimal fees as compared to other players in the market
 
 
 ## Course Curriculum
