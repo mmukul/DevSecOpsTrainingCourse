@@ -41,7 +41,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 
 ## Course Curriculum
 
-### Chapter 1: An Introduction to DevOps Basics
+### Module 1: An Introduction to DevOps Basics
 - What is DevOps?
 - DevOps Building Blocks
 - DevOps Principles
@@ -52,54 +52,54 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - General workflow of CI/CD pipeline
 - Common Challenges faced when using DevOps principle
 
-### Chapter 2: Security Terminologies & Concepts
+### Module 2: Security Terminologies & Concepts
 - Vulnerability
 	- Threat, Exploit, Risk
 - Risk Assessment
 - OWASP
 - MITRE ATT&CK
   
-### Chapter 3: Secure SDLC and CI/CD pipeline
+### Module 3: Secure SDLC and CI/CD pipeline
 - What is Secure SDLC
 - Secure SDLC Practices and Security Gates
 	- Pre-commit hooks
 	- Git Secrets 
 - Security Requirements
 
-### Chapter 4: DevSecOps Maturity Model (DSOMM)
+### Module 4: DevSecOps Maturity Model (DSOMM)
 
-### Chapter 5: Software Component Analysis (SCA)
+### Module 5: Software Component Analysis (SCA)
 - What is Software Component Analysis
 - Software Component Analysis and Its challenges
 - What to look in a SCA solution (Free or Commercial)
 - Embedding SCA tools like OWASP Dependency Checker into the CICD pipeline
 - **Demo:** using OWASP Dependency Checker to scan third party component vulnerabilities in Java Code Base
 
-### Chapter 6: Static Application Security Testing (SAST)
+### Module 6: Static Application Security Testing (SAST)
 - What is Static Application Security Testing
 - Static Analysis and Its challenges
 - Embedding SAST tools like Find Bugs into the pipeline
 - Secrets scanning to prevent secret exposure in the code
 - **Demo:** Using trufflehog to scan for secrets in CI/CD pipeline
 
-### Chapter 7: Dynamic Application Security Testing (DAST)
+### Module 7: Dynamic Application Security Testing (DAST)
 - What is Dynamic Application Security Testing
 - Embedding DAST tools like ZAP and Burp Suite into the pipeline
 - Creating baseline scans for DAST
 - **Demo:** Using ZAP to configure scans
 
-### Chapter 8: Runtime Security & Threat Detection
+### Module 8: Runtime Security & Threat Detection
 - Detect and alert on any behavior that involves making Linux system calls using *Falco*
 
-### Chapter 9: Compliance as Code (CaC)
+### Module 9: Compliance as Code (CaC)
 - Different approaches to handle compliance requirements at DevOps scale
 - Manage compliance using Inspec/OpenScap at Scale
 - **Demo:** Use *Inspec* profile to scale compliance
 
-### Chapter 10: Infrastructure as Code Security
+### Module 10: Infrastructure as Code Security
 - Static analysis of your terraform code to detect potential security vulnerabilities and misconfigurations in your terraformed infrastructure using *tfsec*
 
-### Chapter 11: Container Security (CS)
+### Module 11: Container Security (CS)
 - Container signing & verification using *cosign*
 - Container Security
 	- Privilege Escalation
@@ -114,7 +114,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 	- Sensitive information and secrets
 - Container Security Best Practices
 
-### Chapter 12: Threat Modelling (Design)
+### Module 12: Threat Modelling (Design)
 - STRIDE
 
 ### Practical Project
