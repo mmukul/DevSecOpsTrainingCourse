@@ -119,3 +119,8 @@ This DevSecOps Online Training will be suitable for software developers, technic
 
 ### Practical Project
 - DevSecOps End-to-End CICD Pipeline
+
+Project Snippet:
+
+![image](https://user-images.githubusercontent.com/19668060/222781377-9bc4f8cc-7022-4938-a54f-52c77241ab53.png)
+
