@@ -37,6 +37,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Book Training Slot:
 	- Registration Form: https://forms.gle/gVjz7BA4G38NnYf48
 - Course Fee: Best & minimal course fees as compared to other players in the market
+- Contact with details @ 7769929666 (WhatsApp)
 
 
 ## Course Curriculum
