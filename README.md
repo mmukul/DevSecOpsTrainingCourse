@@ -1,4 +1,4 @@
-## DevSecOps Foundational Online Instructor-Led Training Course:
+## DevSecOps Foundational & Advanced Online Instructor-Led Training Course:
 
 ### About Me:-
 18 years of total professional experience with IC, Architect, Consultant role and a freelance trainer as well as assist in Interview preparation, consult and Architect on projects in DevOps, DevSecOps, IaC,  Application Security and Container / Kubernetes Security.
@@ -37,7 +37,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 10. Good Career prospects as per scope and demand
 
 ### Course Duration:-
-- Duration: 50 hours
+- Duration: 40 hours
 
 ### Enrolment in Course:-
 - Contact @ 7769929666 (WhatsApp) for batch availability, timings and course fees.
@@ -97,6 +97,9 @@ This DevSecOps Online Training will be suitable for software developers, technic
 
 
 ## DevSecOps Advanced Online Instructor-Led Training Course:
+
+### Course Duration:-
+- Duration: 30 hours
 
 ### Advanced Course Curriculum
 
