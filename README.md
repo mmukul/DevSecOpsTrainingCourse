@@ -2,20 +2,12 @@
 
 This course prepare you for Secure SDLC, Infrastructure as Code Security, SAST, DAST, Runtime Security, Container Security, Compliance and Audit, Threat Modelling.
 
+### About Me:-
+18 years of total professional experience with IC, Architect, Consultant role and a freelance trainer as well as assist in Interview preparation, consult and Architect on projects in DevOps, DevSecOps, IaC,  Application Security and Container / Kubernetes Security.
 
-### Training Level
-- Foundation and Intermediate course with Practical Demos and Projects
-
-### Training Batch
-- Weekends and Weekdays Batches
-
-### Pre-requisites
-- Participants should have knowledge of running basic linux commands
-- Participants should have basic understanding of application Security practices like OWASP Top 10
-- You don’t need any experience with DevOps tools
-
-### Target Audience
-This DevSecOps Online Training will be suitable for software developers, technical project managers, architects, operations support, deployment engineers, Freshers and Induction Batch
+### Training Experience:-
+1. Delivered B2B DevOps training for freshers/Induction batch
+2. Delivered B2C DevSecOps training to lateral batch
 
 ### Program Overview
 - Components in a DevOps Pipeline
@@ -26,18 +18,31 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Create DevSecOps pipelines using Git Secrets, SCA, SAST, DAST, OWASP Tools etc
 - Security Best Practices and OWASP Top 10
 
-### Training Key Features
-- Online classroom training by experienced instructors
-- Training involves whiteboard, Quiz, Assignments, Practical Demos and Project
-- Flexibility and adjustable class timings
-- Doubt Resolution Sessions
+### Training Level
+- Foundation and Intermediate course with Practical Demos and Projects
 
-### Course Registration Details:
-- Duration: 48-50 hours
-- Book Training Slot:
-	- Registration Form: https://forms.gle/gVjz7BA4G38NnYf48
-- Course Fee: Best & minimal course fees as compared to other players in the market
-- Contact with details @ 7769929666 (WhatsApp)
+### Pre-requisites
+- Participants should have knowledge of running basic linux commands
+- Participants should have basic understanding of application Security practices like OWASP Top 10
+- You don’t need any experience with DevOps tools
+
+### Target Audience
+This DevSecOps Online Training will be suitable for software developers, technical project managers, architects, operations support, deployment engineers, Freshers and Induction Batch
+
+### Training Key Features:-
+1. Live, online classroom training by experienced instructor
+2. Training involves whiteboard and Practical Demos
+3. Flexible and adjustable class timings on Weekday/Weekend
+7. DevOps Interview preparation (If required)
+8. Career counseling for DevOps / DevSecOps as a career roadmap (If required)
+9. Lower course fees as compared to other Institutions
+10. Good Career prospects as per scope and demand
+
+### Course Duration:-
+- Duration: 50 hours
+
+### Enrolment in Course:-
+- Contact @ 7769929666 (WhatsApp) for batch availability, timings and course fees.
 
 
 ## Course Curriculum
