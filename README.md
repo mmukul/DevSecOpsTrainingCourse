@@ -1,6 +1,4 @@
-## DevSecOps & Security Online Instructor-Led Training Course:
-
-This course prepare you for Secure SDLC, Infrastructure as Code Security, SAST, DAST, Runtime Security, Container Security, Compliance and Audit, Threat Modelling.
+## DevSecOps Foundational Online Instructor-Led Training Course:
 
 ### About Me:-
 18 years of total professional experience with IC, Architect, Consultant role and a freelance trainer as well as assist in Interview preparation, consult and Architect on projects in DevOps, DevSecOps, IaC,  Application Security and Container / Kubernetes Security.
@@ -94,18 +92,18 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Creating baseline scans for DAST
 - **Demo:** Using ZAP to configure scans
 
-### Module 8: Runtime Security & Threat Detection
+### Module 8: Runtime Security & Threat Detection - Advanced Security
 - Detect and alert on any behavior that involves making Linux system calls using *Falco*
 
-### Module 9: Compliance as Code (CaC)
+### Module 9: Compliance as Code (CaC) - Advanced Security
 - Different approaches to handle compliance requirements at DevOps scale
 - Manage compliance using Inspec/OpenScap at Scale
 - **Demo:** Use *Inspec* profile to scale compliance
 
-### Module 10: Infrastructure as Code Security
+### Module 10: Infrastructure as Code Security - Advanced Security
 - Static analysis of your terraform code to detect potential security vulnerabilities and misconfigurations in your terraformed infrastructure using *tfsec*
 
-### Module 11: Container Security (CS)
+### Module 11: Container Security (CS) - Advanced Security
 - Container signing & verification using *cosign*
 - Container Security
 	- Privilege Escalation
@@ -120,7 +118,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 	- Sensitive information and secrets
 - Container Security Best Practices
 
-### Module 12: Threat Modelling (Design)
+### Module 12: Threat Modelling (Design) - Advanced Security
 - STRIDE
 
 ### Practical Project
