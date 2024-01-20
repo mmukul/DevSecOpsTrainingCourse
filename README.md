@@ -131,6 +131,8 @@ This DevSecOps Online Training will be suitable for software developers, technic
 ### Module 12: Threat Modelling (Design)
 - STRIDE
 
+### Module 13: Advanced Vulnerability Management
+
 
 #### Project Snippet of CICD Pipeline:
 
