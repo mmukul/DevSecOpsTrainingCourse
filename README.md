@@ -27,7 +27,7 @@
 ### Target Audience
 This DevSecOps Online Training will be suitable for software developers, technical project managers, architects, operations support, deployment engineers, Freshers and Induction Batch
 
-### Training Key Features:-
+### Training Key Features
 1. Live, online classroom training by experienced instructor
 2. Training involves whiteboard and Practical Demos
 3. Flexible and adjustable class timings on Weekday/Weekend
@@ -36,10 +36,10 @@ This DevSecOps Online Training will be suitable for software developers, technic
 9. Lower course fees as compared to other Institutions
 10. Good Career prospects as per scope and demand
 
-### Course Duration:-
+### Course Duration
 - Duration: 40 hours
 
-### Enrolment in Course:-
+### Enrolment
 - Contact @ 7769929666 (WhatsApp) for batch availability, timings and course fees.
 
 
