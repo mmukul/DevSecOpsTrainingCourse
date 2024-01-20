@@ -1,9 +1,9 @@
-## DevSecOps Foundational & Advanced Online Instructor-Led Training Course:
+## DevSecOps (DevOps + Security) Foundational & Advanced Online Instructor-Led Training Course
 
-### About Me:-
+### About Me
 18 years of total professional experience with IC, Architect, Consultant role and a freelance trainer as well as assist in Interview preparation, consult and Architect on projects in DevOps, DevSecOps, IaC,  Application Security and Container / Kubernetes Security.
 
-### Training Experience:-
+### Training Experience
 1. Delivered B2B DevOps training for freshers/Induction batch
 2. Delivered B2C DevSecOps training to lateral batch
 
@@ -13,7 +13,7 @@
 - Security Tools and Terminologies
 - Secrete Management from codebase
 - Vulnerability Management
-- Create DevSecOps pipelines using Git Secrets, SCA, SAST, DAST, OWASP Tools etc
+- DevSecOps pipelines using Git Secrets, SCA, SAST, DAST, OWASP Tools etc
 - Security Best Practices and OWASP Top 10
 
 ### Training Level
@@ -61,7 +61,6 @@ This DevSecOps Online Training will be suitable for software developers, technic
 	- Threat, Exploit, Risk
 - Risk Assessment
 - OWASP
-- MITRE ATT&CK
   
 ### Module 3: Secure SDLC and CI/CD pipeline
 - What is Secure SDLC
@@ -93,10 +92,10 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - **Demo:** Using ZAP to configure scans
 
 ### Practical Project
-- DevSecOps End-to-End CICD Pipeline
+- DevSecOps End-to-End secure CICD Pipeline
 
 
-## DevSecOps Advanced Online Instructor-Led Training Course:
+## DevSecOps Advanced Online Instructor-Led Training Course
 
 ### Course Duration:-
 - Duration: 30 hours
@@ -113,6 +112,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 
 ### Module 10: Infrastructure as Code Security
 - Static analysis of your terraform code to detect potential security vulnerabilities and misconfigurations in your terraformed infrastructure
+  
 ### Module 11: Container Security (CS)
 - Container signing & verification
 - Container Security
