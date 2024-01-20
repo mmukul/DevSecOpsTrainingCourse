@@ -43,7 +43,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Contact @ 7769929666 (WhatsApp) for batch availability, timings and course fees.
 
 
-## Course Curriculum
+## Foundational Course Curriculum
 
 ### Module 1: An Introduction to DevOps Basics
 - What is DevOps?
@@ -92,40 +92,43 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Creating baseline scans for DAST
 - **Demo:** Using ZAP to configure scans
 
-### Module 8: Runtime Security & Threat Detection - Advanced Security
-- Detect and alert on any behavior that involves making Linux system calls using *Falco*
+### Practical Project
+- DevSecOps End-to-End CICD Pipeline
 
-### Module 9: Compliance as Code (CaC) - Advanced Security
+
+## DevSecOps Advanced Online Instructor-Led Training Course:
+
+### Advanced Course Curriculum
+
+### Module 8: Runtime Security & Threat Detection
+- Detect and alert on any behavior that involves making Linux system calls
+
+### Module 9: Compliance as Code (CaC)
 - Different approaches to handle compliance requirements at DevOps scale
-- Manage compliance using Inspec/OpenScap at Scale
-- **Demo:** Use *Inspec* profile to scale compliance
+- Manage compliance
+- **Demo:**
 
-### Module 10: Infrastructure as Code Security - Advanced Security
-- Static analysis of your terraform code to detect potential security vulnerabilities and misconfigurations in your terraformed infrastructure using *tfsec*
-
-### Module 11: Container Security (CS) - Advanced Security
-- Container signing & verification using *cosign*
+### Module 10: Infrastructure as Code Security
+- Static analysis of your terraform code to detect potential security vulnerabilities and misconfigurations in your terraformed infrastructure
+### Module 11: Container Security (CS)
+- Container signing & verification
 - Container Security
 	- Privilege Escalation
 	- Capabilities
 	- Read-Only Filesystem
 - Docker Security Audit & Benchmarking
 - Container and Container Security Problems
-- Container Security Tool using *Trivy*
+- Container Security
 	- Detects vulnerabilities in OS packages and application dependencies
 	- Known vulnerabilities (CVEs)
 	- IaC issues and misconfigurations
 	- Sensitive information and secrets
 - Container Security Best Practices
 
-### Module 12: Threat Modelling (Design) - Advanced Security
+### Module 12: Threat Modelling (Design)
 - STRIDE
-
-### Practical Project
-- DevSecOps End-to-End CICD Pipeline
 
 
 #### Project Snippet of CICD Pipeline:
 
 ![image](https://user-images.githubusercontent.com/19668060/222781377-9bc4f8cc-7022-4938-a54f-52c77241ab53.png)
-
