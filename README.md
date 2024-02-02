@@ -43,7 +43,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Contact @ 7769929666 (WhatsApp) for batch availability, timings and course fees.
 
 
-## Foundational Course Curriculum
+# Foundational Course Curriculum
 
 ### Module 1: An Introduction to DevOps Basics
 - What is DevOps?
