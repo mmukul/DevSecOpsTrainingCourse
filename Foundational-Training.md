@@ -36,7 +36,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 10. Good Career prospects as per scope and demand
 
 ### Course Duration
-- Duration: 30 hours
+- Duration: 1 month
 
 ### Enrolment
 - Contact @ 7769929666 (WhatsApp) for batch availability, timings and course fees.
