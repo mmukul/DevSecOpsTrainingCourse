@@ -17,12 +17,12 @@
 - Security Best Practices and OWASP Top 10
 
 ### Training Level
-- Foundation and Intermediate course with Practical Demos and Projects
+- Intermediate course with Practical Demos and Project
 
 ### Pre-requisites
 - Participants should have knowledge of running basic linux commands
 - Participants should have basic understanding of application Security practices like OWASP Top 10
-- You don’t need any experience with DevOps tools
+- You should have experience with DevOps tools and CICD pipeline
 
 ### Target Audience
 This DevSecOps Online Training will be suitable for software developers, technical project managers, architects, operations support, deployment engineers, Freshers and Induction Batch
