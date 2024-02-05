@@ -4,7 +4,7 @@
 18 years of total professional experience with IC, Architect, Consultant role and a freelance trainer as well as assist in Interview preparation, consult and Architect on projects in DevOps, DevSecOps, IaC, Application Security and Container / Kubernetes Security.
 
 ### Training Experience
-1. Delivered B2B DevSecOps training for freshers/Induction/lateral batches
+- Delivered B2B DevSecOps training for freshers/Induction/lateral batches
 
 ### Program Overview
 - Components in a DevOps Pipeline
@@ -27,13 +27,13 @@
 This DevSecOps Online Training will be suitable for software developers, technical project managers, architects, operations support, deployment engineers, Freshers and Induction Batch
 
 ### Training Key Features
-1. Live, online classroom training by experienced instructor
-2. Training involves whiteboard and Practical Demos
-3. Flexible and adjustable class timings on Weekday/Weekend
-7. DevOps Interview preparation (If required)
-8. Career counseling for DevOps / DevSecOps as a career roadmap (If required)
-9. Lower course fees as compared to other Institutions
-10. Good Career prospects as per scope and demand
+- Live, online classroom training by experienced instructor
+- Training involves whiteboard and Practical Demos
+- Flexible and adjustable class timings on Weekday/Weekend
+- DevOps Interview preparation (If required)
+- Career counseling for DevOps / DevSecOps as a career roadmap (If required)
+- Lower course fees as compared to other Institutions
+- Good Career prospects as per scope and demand
 
 ### Course Duration
 - Duration: 1.5 month
