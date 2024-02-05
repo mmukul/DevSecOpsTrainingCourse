@@ -1,11 +1,10 @@
 ## DevSecOps (DevOps + Security) Advanced Online Instructor-Led Training Course
 
 ### About Me
-18 years of total professional experience with IC, Architect, Consultant role and a freelance trainer as well as assist in Interview preparation, consult and Architect on projects in DevOps, DevSecOps, IaC,  Application Security and Container / Kubernetes Security.
+18 years of total professional experience with IC, Architect, Consultant role and a freelance trainer as well as assist in Interview preparation, consult and Architect on projects in DevOps, DevSecOps, IaC, Application Security and Container / Kubernetes Security.
 
 ### Training Experience
-1. Delivered B2B DevOps training for freshers/Induction batch
-2. Delivered B2C DevSecOps training to lateral batch
+1. Delivered B2B DevSecOps training for freshers/Induction/lateral batches
 
 ### Program Overview
 - Components in a DevOps Pipeline
@@ -37,7 +36,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 10. Good Career prospects as per scope and demand
 
 ### Course Duration
-- Duration: 48 hours
+- Duration: 1.5 month
 
 ### Enrolment
 - Contact @ 7769929666 (WhatsApp) for batch availability, timings and course fees.
@@ -45,18 +44,18 @@ This DevSecOps Online Training will be suitable for software developers, technic
 
 ### Course Curriculum
 
-### Module 8: Runtime Security & Threat Detection
+### Module 1: Runtime Security & Threat Detection
 - Detect and alert on any behavior that involves making Linux system calls
 
-### Module 9: Compliance as Code (CaC)
+### Module 2: Compliance as Code (CaC)
 - Different approaches to handle compliance requirements at DevOps scale
 - Manage compliance
 - **Demo:**
 
-### Module 10: Infrastructure as Code Security
+### Module 3: Infrastructure as Code Security
 - Static analysis of your terraform code to detect potential security vulnerabilities and misconfigurations in your terraformed infrastructure
   
-### Module 11: Container Security (CS)
+### Module 4: Container Security (CS)
 - Container signing & verification
 - Container Security
 	- Privilege Escalation
@@ -71,10 +70,10 @@ This DevSecOps Online Training will be suitable for software developers, technic
 	- Sensitive information and secrets
 - Container Security Best Practices
 
-### Module 12: Threat Modelling (Design)
+### Module 5: Threat Modelling (Design)
 - STRIDE
 
-### Module 13: Advanced Vulnerability Management
+### Module 6: Advanced Vulnerability Management
 
 ### Caption Project
 - Secure CICD pipeline in Jenkins to build Java application
