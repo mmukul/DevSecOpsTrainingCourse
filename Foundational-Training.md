@@ -4,8 +4,7 @@
 18 years of total professional experience with IC, Architect, Consultant role and a freelance trainer as well as assist in Interview preparation, consult and Architect on projects in DevOps, DevSecOps, IaC,  Application Security and Container / Kubernetes Security.
 
 ### Training Experience
-1. Delivered B2B DevOps training for freshers/Induction batch
-2. Delivered B2C DevSecOps training to lateral batch
+1. Delivered B2B and B2C DevSecOps training for freshers/Induction/lateral batches
 
 ### Program Overview
 - Components in a DevOps Pipeline
