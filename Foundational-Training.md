@@ -1,4 +1,4 @@
-## DevSecOps (DevOps + Security) Foundational & Advanced Online Instructor-Led Training Course
+## DevSecOps (DevOps + Security) Foundational Online Instructor-Led Training Course
 
 ### About Me
 18 years of total professional experience with IC, Architect, Consultant role and a freelance trainer as well as assist in Interview preparation, consult and Architect on projects in DevOps, DevSecOps, IaC,  Application Security and Container / Kubernetes Security.
@@ -17,7 +17,7 @@
 - Security Best Practices and OWASP Top 10
 
 ### Training Level
-- Foundation and Intermediate course with Practical Demos and Projects
+- Foundation course with Practical Demos and Project
 
 ### Pre-requisites
 - Participants should have knowledge of running basic linux commands
@@ -37,13 +37,13 @@ This DevSecOps Online Training will be suitable for software developers, technic
 10. Good Career prospects as per scope and demand
 
 ### Course Duration
-- Duration: 40 hours
+- Duration: 30 hours
 
 ### Enrolment
 - Contact @ 7769929666 (WhatsApp) for batch availability, timings and course fees.
 
 
-## Foundational Course Curriculum
+## Course Curriculum
 
 ### Module 1: An Introduction to DevOps Basics
 - What is DevOps?
@@ -91,52 +91,5 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Creating baseline scans for DAST
 - **Demo:** Using ZAP to configure scans
 
-### Practical Project
+### Caption Project
 - DevSecOps End-to-End secure CICD Pipeline
-
-
-## DevSecOps Advanced Online Instructor-Led Training Course
-
-### Course Duration:-
-- Duration: 30 hours
-
-### Advanced Course Curriculum
-
-### Module 8: Runtime Security & Threat Detection
-- Detect and alert on any behavior that involves making Linux system calls
-
-### Module 9: Compliance as Code (CaC)
-- Different approaches to handle compliance requirements at DevOps scale
-- Manage compliance
-- **Demo:**
-
-### Module 10: Infrastructure as Code Security
-- Static analysis of your terraform code to detect potential security vulnerabilities and misconfigurations in your terraformed infrastructure
-  
-### Module 11: Container Security (CS)
-- Container signing & verification
-- Container Security
-	- Privilege Escalation
-	- Capabilities
-	- Read-Only Filesystem
-- Docker Security Audit & Benchmarking
-- Container and Container Security Problems
-- Container Security
-	- Detects vulnerabilities in OS packages and application dependencies
-	- Known vulnerabilities (CVEs)
-	- IaC issues and misconfigurations
-	- Sensitive information and secrets
-- Container Security Best Practices
-
-### Module 12: Threat Modelling (Design)
-- STRIDE
-
-### Module 13: Advanced Vulnerability Management
-
-### Project
-- Secure CICD pipeline in Jenkins to build Java application
-
-
-#### Project Snippet of CICD Pipeline:
-
-![image](https://user-images.githubusercontent.com/19668060/222781377-9bc4f8cc-7022-4938-a54f-52c77241ab53.png)
