@@ -1,4 +1,4 @@
-## DevSecOps & Security Online Instructor-Led Training Course:
+## DevSecOps & Security Online Instructor-Led Training Course
 
 This course prepare you for Secure SDLC, Infrastructure as Code Security, SAST, DAST, Runtime Security, Container Security, Compliance and Audit, Threat Modelling.
 
