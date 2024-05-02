@@ -33,7 +33,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Doubt Resolution Sessions
 
 ### Course Registration Details:
-- Duration: 48-50 hours
+- Duration: 50 - 52 hours
 - Book Training Slot:
 	- Registration Form: https://forms.gle/gVjz7BA4G38NnYf48
 
