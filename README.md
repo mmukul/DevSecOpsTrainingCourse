@@ -1,5 +1,5 @@
 
-This course prepare you for Secure SDLC, Infrastructure as Code Security, SAST, DAST, Runtime Security, Container Security, Compliance and Audit, Threat Modelling based on foundational and Advanced DevSecOps courses
+This course prepare you for Secure SDLC, Infrastructure as Code Security, SAST, DAST, Runtime Security, Container Security, Compliance and Audit, Threat Modelling based on Foundational and Advanced DevSecOps courses
 
 ### Program Overview
 - Components in a DevOps Pipeline
