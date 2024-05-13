@@ -80,11 +80,13 @@ This DevSecOps Online Training will be suitable for software developers, technic
 ### Module 6: Static Application Security Testing (SAST)
 - What is Static Application Security Testing
 - Static Analysis and Its challenges
-- Embedding SAST tools like Find Bugs into the pipeline
+- Embedding SAST tools like SonarQube into the pipeline
+
+## Module 7: Secrete Management from Codebase
 - Secrets scanning to prevent secret exposure in the code
 - **Demo:** Using trufflehog to scan for secrets in CI/CD pipeline
 
-### Module 7: Dynamic Application Security Testing (DAST)
+### Module 8: Dynamic Application Security Testing (DAST)
 - What is Dynamic Application Security Testing
 - Embedding DAST tools like ZAP and Burp Suite into the pipeline
 - Creating baseline scans for DAST
