@@ -42,8 +42,9 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Detect and alert on any behavior that involves making Linux system calls
 
 ### Module 2: Compliance as Code (CaC)
-- Different approaches to handle compliance requirements at DevOps scale
-- Manage compliance
+- Analyze the code for issues
+- Audit the application using Inspec
+- Automating Compliance Checks
 - **Demo:**
 
 ### Module 3: Infrastructure as Code Security
