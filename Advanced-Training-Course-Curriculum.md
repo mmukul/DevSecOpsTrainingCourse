@@ -28,13 +28,10 @@ This DevSecOps Online Training will be suitable for software developers, technic
 
 ### Training Key Features
 - Live, online classroom training by experienced instructor
+- Real-World Projects: Gain practical, hands-on experience
 - Training involves whiteboard and Practical Demos
-- Flexible and adjustable class timings on Weekday/Weekend
-- DevOps Interview preparation (If required)
-- Career counseling for DevOps / DevSecOps as a career roadmap (If required)
-- Lower course fees as compared to other Institutions
-- Good Career prospects as per scope and demand
-
+- Flexible and adjustable class timings on weekday or Weekends
+- Tailored modules to boost your Dev+Sec+Ops expertise
 
 ### Course Curriculum
 
