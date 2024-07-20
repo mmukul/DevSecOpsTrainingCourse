@@ -1,11 +1,5 @@
 ## DevSecOps (DevOps + Security) Foundational Online Instructor-Led Training Course
 
-### About Me
-18 years of total professional experience with IC, Architect, Consultant role and a freelance trainer as well as assist in Interview preparation, consult and Architect on projects in DevOps, DevSecOps, IaC,  Application Security and Container / Kubernetes Security.
-
-### Training Experience
-- Delivered B2B and B2C DevSecOps training for freshers/Induction/lateral batches
-
 ### Program Overview
 - Components in a DevOps Pipeline
 - Shifting to DevSecOps processes and Secure SDLC
@@ -33,9 +27,12 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Flexible and adjustable class timings on weekday or Weekends
 - Tailored modules to boost your Dev+Sec+Ops expertise
 
+### Course Duration
+- Duration: 1 Month
+
 ## Course Curriculum
 
-### Module 1: An Introduction to DevOps Basics
+### 1. Introduction to DevOps Basics
 - What is DevOps?
 - DevOps Building Blocks
 - DevOps Principles
@@ -46,38 +43,38 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - General workflow of CI/CD pipeline
 - Common Challenges faced when using DevOps principle
 
-### Module 2: Security Terminologies & Concepts
+### 2. Security Terminologies & Concepts
 - Vulnerability
 	- Threat, Exploit, Risk
 - Risk Assessment
 - OWASP
   
-### Module 3: Secure SDLC and CI/CD pipeline
+### 3. Secure SDLC and CI/CD pipeline
 - What is Secure SDLC
 - Secure SDLC Practices and Security Gates
 	- Pre-commit hooks
 	- Git Secrets 
 - Security Requirements
 
-### Module 4: DevSecOps Maturity Model (DSOMM)
+### 4. DevSecOps Maturity Model (DSOMM)
 
-### Module 5: Software Component Analysis (SCA)
+### 5. Software Component Analysis (SCA)
 - What is Software Component Analysis
 - Software Component Analysis and Its challenges
 - What to look in a SCA solution (Free or Commercial)
 - Embedding SCA tools like OWASP Dependency Checker into the CICD pipeline
 - **Demo:** using OWASP Dependency Checker to scan third party component vulnerabilities in Java Code Base
 
-### Module 6: Static Application Security Testing (SAST)
+### 6. Static Application Security Testing (SAST)
 - What is Static Application Security Testing
 - Static Analysis and Its challenges
 - Embedding SAST tools like SonarQube into the pipeline
 
-## Module 7: Secrete Management from Codebase
+### 7. Secrete Management from Codebase
 - Secrets scanning to prevent secret exposure in the code
 - **Demo:** Using trufflehog to scan for secrets in CI/CD pipeline
 
-### Module 8: Dynamic Application Security Testing (DAST)
+### 8: Dynamic Application Security Testing (DAST)
 - What is Dynamic Application Security Testing
 - Embedding DAST tools like ZAP and Burp Suite into the pipeline
 - Creating baseline scans for DAST
