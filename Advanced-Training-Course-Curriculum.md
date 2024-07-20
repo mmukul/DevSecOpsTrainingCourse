@@ -1,11 +1,5 @@
 ## DevSecOps (DevOps + Security) Advanced Online Instructor-Led Training Course
 
-### About Me
-18 years of total professional experience with IC, Architect, Consultant role and a freelance trainer as well as assist in Interview preparation, consult and Architect on projects in DevOps, DevSecOps, IaC, Application Security and Container / Kubernetes Security.
-
-### Training Experience
-- Delivered B2B DevSecOps training for freshers/Induction/lateral batches
-
 ### Program Overview
 - Components in a DevOps Pipeline
 - Shifting to DevSecOps processes and Secure SDLC
@@ -33,21 +27,24 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Flexible and adjustable class timings on weekday or Weekends
 - Tailored modules to boost your Dev+Sec+Ops expertise
 
+## Course Duration
+- Duration: 1 Month
+
 ### Course Curriculum
 
-### Module 1: Runtime Security & Threat Detection
+### 1. Runtime Security & Threat Detection
 - Detect and alert on any behavior that involves making Linux system calls
 
-### Module 2: Compliance as Code (CaC)
+### 2. Compliance as Code (CaC)
 - Analyze the code for issues
 - Audit the application using Inspec
 - Automating Compliance Checks
 - **Demo:**
 
-### Module 3: Infrastructure as Code Security
+### 3. Infrastructure as Code Security
 - Static analysis of your terraform code to detect potential security vulnerabilities and misconfigurations in your terraformed infrastructure
   
-### Module 4: Container Security (CS)
+### 4. Container Security (CS)
 - Container signing & verification
 - Container Security
 	- Privilege Escalation
@@ -61,16 +58,11 @@ This DevSecOps Online Training will be suitable for software developers, technic
 	- IaC issues and misconfigurations
 	- Sensitive information and secrets
 - Container Security Best Practices
+- **Demo:**
 
-### Module 5: Threat Modelling (Design)
+### 5. Threat Modelling (Design)
 - STRIDE
-
-### Module 6: Advanced Vulnerability Management
+- **Demo:**
 
 ### Caption Project
-- Secure CICD pipeline in Jenkins to build Java application
-
-
-#### Project Snippet of CICD Pipeline:
-
-![image](https://user-images.githubusercontent.com/19668060/222781377-9bc4f8cc-7022-4938-a54f-52c77241ab53.png)
+- Secure CICD pipeline in Jenkins to build Java application using SAST, DAST and SCA
