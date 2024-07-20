@@ -28,7 +28,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Tailored modules to boost your Dev+Sec+Ops expertise
 
 ### Course Duration
-- Duration: 1 Month
+- Duration: 2 Month
 
 ## Course Curriculum
 
