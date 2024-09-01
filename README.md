@@ -12,3 +12,6 @@ This course prepare you for Secure SDLC, Infrastructure as Code Security, SAST, 
 - Vulnerability Management
 - Create DevSecOps pipelines using Git Secrets, SCA, SAST, DAST, OWASP Tools etc
 - Security Best Practices and OWASP Top 10
+
+YouTube Channel:
+https://www.youtube.com/@DevSecOps-Experts
