@@ -28,7 +28,7 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - Tailored modules to boost your Dev+Sec+Ops expertise
 
 ### Course Duration
-- Duration: 2 Month
+- Duration: 1 Month
 
 ## Course Curriculum
 
@@ -48,37 +48,43 @@ This DevSecOps Online Training will be suitable for software developers, technic
 	- Threat, Exploit, Risk
 - Risk Assessment
 - OWASP
+
+### 3. DevSecOps Maturity Model (DSOMM)
   
-### 3. Secure SDLC and CI/CD pipeline
+### 4. Secure SDLC and CI/CD pipeline
 - What is Secure SDLC
 - Secure SDLC Practices and Security Gates
 	- Pre-commit hooks
 	- Git Secrets 
 - Security Requirements
 
-### 4. DevSecOps Maturity Model (DSOMM)
+### 5. Pre-commit hooks
 
-### 5. Software Component Analysis (SCA)
+
+### 6. Git Secrets
+
+
+### 7. Software Component Analysis (SCA)
 - What is Software Component Analysis
 - Software Component Analysis and Its challenges
 - What to look in a SCA solution (Free or Commercial)
 - Embedding SCA tools like OWASP Dependency Checker into the CICD pipeline
 - **Demo:** using OWASP Dependency Checker to scan third party component vulnerabilities in Java Code Base
 
-### 6. Static Application Security Testing (SAST)
+### 8. Static Application Security Testing (SAST)
 - What is Static Application Security Testing
 - Static Analysis and Its challenges
 - Embedding SAST tools like SonarQube into the pipeline
 
-### 7. Secrete Management from Codebase
+### 9. Secrete Management from Codebase
 - Secrets scanning to prevent secret exposure in the code
 - **Demo:** Using trufflehog to scan for secrets in CI/CD pipeline
 
-### 8: Dynamic Application Security Testing (DAST)
+### 10: Dynamic Application Security Testing (DAST)
 - What is Dynamic Application Security Testing
 - Embedding DAST tools like ZAP and Burp Suite into the pipeline
 - Creating baseline scans for DAST
 - **Demo:** Using ZAP to configure scans
 
 ### Caption Project
-- DevSecOps End-to-End secure CICD Pipeline
+- DevSecOps End-to-End secure CICD Pipeline using SCA, SAST and DAST etc.
