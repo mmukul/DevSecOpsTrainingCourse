@@ -50,45 +50,70 @@ This DevSecOps Online Training will be suitable for software developers, technic
 - OWASP
 
 ### 3. DevSecOps Maturity Model (DSOMM)
+- Introduction to DevSecOps Maturity Model (DSOMM)
+	- What is DSOMM?
+	- Importance of DevSecOps maturity in modern SDLC
+- Understanding the Maturity Levels
+- Assessing Your DevSecOps Maturity
+	- DSOMM self-assessment framework
+	- Identifying gaps & prioritizing improvements
   
 ### 4. Secure SDLC and CI/CD pipeline
 - What is Secure SDLC
 - Secure SDLC Practices and Security Gates
 - Security Requirements
 
-### 5. Pre-commit hooks
-
+### 5. Pre-Commit Hooks for Secure & Efficient Development
+- Introduction to Pre-Commit Hooks
+- Setting Up Pre-Commit Hooks
+- Installing Pre-Commit
+- Adding Hooks to a Repository
+- Updating Pre-Commit Hooks
+- Automating Pre-Commit Hooks in the CICD pipeline
+- **Hands-on Lab**
 
 ### 6. Secrets Management
 - Detect hardcoded secrets in the code
+- Automate detection of hardcoded secrets in the CICD pipeline
+- **Hands-on Lab**
 
-### 7. Enforce Code Signing
+### 7. Enforce Code Signing (Optional)
 - Digitally sign code to prevent unauthorized modifications
+- **Hands-on Lab**
 
 ### 8. Secure Dependencies & Third-Party Libraries
 - What is Software Component Analysis (SCA)
 - Software Component Analysis and Its challenges
 - What to look in a SCA solution (Free or Commercial)
 - Embedding SCA tools like OWASP Dependency Checker into the CICD pipeline
-- **Demo:** using OWASP Dependency Checker to scan third party component vulnerabilities in Java Code Base
+- **Hands-on Lab:** using OWASP Dependency Checker to scan third party component vulnerabilities in Java Code Base
 
-### 7. Best practices for securing application supply chain
-- SBOM
+### 9. Software Bill of Materials (SBOM) – Security & Compliance
+- Introduction to SBOM
+	- What is an SBOM?
+	- Importance of SBOM in Software Supply Chain Security
+- Generating SBOMs
+	- Tools & Formats: CycloneDX, SPDX
+	- Generating SBOMs using Open Source Tools
+- Creating SBOMs in CI/CD Pipelines
+- Analyzing & Validating SBOMs
+	- Identifying Vulnerabilities in Dependencies (SCA)
+- SBOM in DevSecOps & Supply Chain Security
+	- Automating SBOM checks in CI/CD
+- Real-World Case Studies: Log4j
+- **Hands-on Lab**
 
-### 8. Static Application Security Testing (SAST)
+### 10. Static Application Security Testing (SAST)
 - What is Static Application Security Testing
 - Static Analysis and Its challenges
 - Embedding SAST tools like SonarQube into the pipeline
+- **Hands-on Lab**
 
-### 9. Secrete Management from Codebase
-- Secrets scanning to prevent secret exposure in the code
-- **Demo:** Using trufflehog to scan for secrets in CI/CD pipeline
-
-### 10: Dynamic Application Security Testing (DAST)
+### 11: Dynamic Application Security Testing (DAST)
 - What is Dynamic Application Security Testing
 - Embedding DAST tools like ZAP and Burp Suite into the pipeline
 - Creating baseline scans for DAST
-- **Demo:** Using ZAP to configure scans
+- **Hands-on Lab:** using OWASP ZAP to configure scans
 
 ### Caption Project
 - DevSecOps End-to-End secure CICD Pipeline using SCA, SAST and DAST etc.
