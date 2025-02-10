@@ -54,22 +54,26 @@ This DevSecOps Online Training will be suitable for software developers, technic
 ### 4. Secure SDLC and CI/CD pipeline
 - What is Secure SDLC
 - Secure SDLC Practices and Security Gates
-	- Pre-commit hooks
-	- Git Secrets 
 - Security Requirements
 
 ### 5. Pre-commit hooks
 
 
-### 6. Git Secrets
+### 6. Secrets Management
+- Detect hardcoded secrets in the code
 
+### 7. Enforce Code Signing
+- Digitally sign code to prevent unauthorized modifications
 
-### 7. Software Component Analysis (SCA)
-- What is Software Component Analysis
+### 8. Secure Dependencies & Third-Party Libraries
+- What is Software Component Analysis (SCA)
 - Software Component Analysis and Its challenges
 - What to look in a SCA solution (Free or Commercial)
 - Embedding SCA tools like OWASP Dependency Checker into the CICD pipeline
 - **Demo:** using OWASP Dependency Checker to scan third party component vulnerabilities in Java Code Base
+
+### 7. Best practices for securing application supply chain
+- SBOM
 
 ### 8. Static Application Security Testing (SAST)
 - What is Static Application Security Testing
